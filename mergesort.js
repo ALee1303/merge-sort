@@ -1,4 +1,7 @@
 function split(wholeArray) {
+  let midIdx = Math.floor(wholeArray.length / 2);
+  let firstHalf = wholeArray.slice(0, midIdx);
+  let secondHalf = wholeArray.slice(midIdx);
   
   return [firstHalf, secondHalf];
 }
