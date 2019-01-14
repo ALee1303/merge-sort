@@ -21,4 +21,7 @@ describe('Merge Sort function', function(){
   it('is able to correctly sort an array', function(){
     expect( mergeSort([3, 5, 1, 2, 4]) ).toEqual( [1, 2, 3, 4, 5] );
   });
+  it('is able to correctly sort another array', function(){
+    expect( mergeSort([6, 8, 1, 3, 5]) ).toEqual( [1, 3, 5, 6, 8] );
+  });
 });
