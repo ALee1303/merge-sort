@@ -10,10 +10,10 @@ describe('Split Array function', function() {
 
 describe('Merge function', function(){
   it('is able to merge two sorted arrays into one sorted array', function(){
-    expect( merge([1, 2], [3, 4, 5]) ).toEqual( [1, 2, 3, 4, 5] );
+    expect( merge([1, 2], [3, 4, 5], callBack = (a, b) => a < b) ).toEqual( [1, 2, 3, 4, 5] );
   });
   it('is able to merge two sorted arrays into one sorted array', function(){
-    expect( merge([4, 5], [1, 2, 3]) ).toEqual( [1, 2, 3, 4, 5] );
+    expect( merge([4, 5], [1, 2, 3], callBack = (a, b) => a < b) ).toEqual( [1, 2, 3, 4, 5] );
   });
 });
 
